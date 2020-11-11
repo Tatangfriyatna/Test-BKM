@@ -1,16 +1,12 @@
 <?php
+$data		= array("AKU","SUKA","MAKAN","NASI","PADANG");
+$data2		= array("PADANG","NASI","MAKAN","SUKA","AKU");
+$merge		= array_merge ($data,$data2);
 
-    $data = array("AKU","SUKA","MAKAN","NASI","PADANG");
-    echo("Saya suka warna ");
-    foreach($data as $x=>$y)
-    {
-		if($x<3)
-		{
-			echo($y.", ");
-		}
-		else 
-		{
-			echo("dan ".$y);
-		}
-    }
+foreach($data as $x)
+{
+	echo '<pre>'; print_r($merge);
+}
+
+
 ?>

@@ -7,14 +7,9 @@ $buah = array(
       array( "NAMA" => "DUKU", "HARGA" => 10000, "RASA" => "ASAM"),
       array( "NAMA" => "NANAS", "HARGA" => 5000, "RASA" => "ASAM")
       );
+$buah[] = array("NAMA" => "PISANG", "HARGA" => 5000, "RASA" => "MANIS");
+rsort($buah);
+print_r($buah);
 
-$kolom = array_column($data, 'NAMA');
-while (($cari = array_search("K", $kolom)) != NULL) 
-{ 
-echo "Hasil pencarian : ".$cari;
-echo "<br>";
-unset($kolom[$cari]); 
-} 
 ?>
-
 

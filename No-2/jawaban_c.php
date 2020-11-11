@@ -12,23 +12,16 @@ $bulan = array('1'=>'Januari',
 			'November', 
 			'Desember'
 		);
-$batas_waktu = '2015-11-10';
+$batas_waktu = '2020-05-01';
 echo '<table>
 		<tr>
 			<th>Bulan</th>
-			<th>Keterangan</th>
 		</tr>';
-for ($i = 1; $i <= count($bulan); $i++)
+for ($i = 6; $i < count($bulan); $i++)
 {	
 	$bln_batas = date("m",strtotime($batas_waktu));
 	echo '<tr>
 			<td> ' . strtoupper($bulan[$i]) . ' </td>';
-		
-	if ($bln_batas == $i)
-		echo '<td>Batas waktu penulisan</td>';
-	else
-		echo '<td>-</td>';
-		
 	echo '</tr>';
 }
 
